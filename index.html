@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define la codificación correcta de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que la página se adapte correctamente a móviles y tabletas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que se muestra en la pestaña del navegador -->
+    <title>Comunicado interno | Academia de Danza MX</title>
+
+    <!-- Favicon del proyecto -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+    <!-- 
+        ENCABEZADO PRINCIPAL DEL SITIO
+        Contiene la marca institucional y el menú principal.
+    -->
+    <header class="site-header">
+        <div class="site-header-container">
+
+            <!-- 
+                MARCA PRINCIPAL DEL SITIO
+                Se usa un isotipo textual simple y el nombre institucional.
+            -->
+            <div class="site-brand">
+                <div class="brand-mark" aria-hidden="true">AD</div>
+
+                <div class="brand-text">
+                    <p class="brand-title">Academia de Danza MX</p>
+                    <p class="brand-subtitle">Portal interno de coordinación académica</p>
+                </div>
+            </div>
+
+            <!-- 
+                CONTROL DEL MENÚ HAMBURGUESA
+                Este checkbox permite mostrar u ocultar el menú en móvil
+                usando solo HTML y CSS.
+            -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- 
+                BOTÓN VISUAL DEL MENÚ HAMBURGUESA
+                Se asocia al checkbox para abrir y cerrar el menú.
+            -->
+            <label for="menu-toggle" class="menu-button" aria-label="Abrir menú principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- 
+                NAVEGACIÓN PRINCIPAL
+                Ahora sí tiene función real y lleva a secciones existentes.
+            -->
+            <nav class="site-nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#comunicados-resumen">Comunicados</a>
+                <a href="#coordinacion-resumen">Coordinación</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 
+        SUBMENÚ DE NAVEGACIÓN INTERNA
+        Permite al usuario llegar rápido a secciones del comunicado.
+    -->
+    <nav class="section-nav" aria-label="Navegación interna del comunicado">
+        <div class="section-nav-container">
+            <a href="#informacion-general">Información general</a>
+            <a href="#asignaturas">Asignaturas</a>
+            <a href="#calendario">Calendario</a>
+            <a href="#fechas-clave">Fechas clave</a>
+            <a href="#lineamientos">Lineamientos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- 
+        CONTENIDO PRINCIPAL DEL DOCUMENTO
+        Aquí vive toda la información institucional.
+    -->
+    <main class="main-content">
+
+        <!-- 
+            HERO PRINCIPAL DEL SITIO
+            Sirve como sección de inicio del portal y del comunicado.
+        -->
+        <section class="notice-hero" id="inicio">
+
+            <!-- 
+                COLUMNA DE TEXTO DEL HERO
+                Presenta el aviso principal del sitio.
+            -->
+            <div class="notice-hero-content">
+                <p class="notice-label">Comunicado interno</p>
+
+                <h1 class="notice-title">
+                    Organización académica de actividades, horarios, fechas de evaluación
+                    y lineamientos de uso de espacios
+                </h1>
+
+                <p class="notice-subtitle">
+                    Se informa al cuerpo docente y a la coordinación académica de Academia de Danza MX
+                    sobre la planeación general del periodo, asignaturas consideradas, fechas clave
+                    y lineamientos para el uso ordenado de espacios institucionales.
+                </p>
+            </div>
+
+            <!-- 
+                COLUMNA VISUAL DEL HERO
+                La imagen se presenta dentro de un marco visual más elegante
+                para integrarla mejor con el diseño.
+            -->
+            <figure class="notice-hero-figure">
+                <div class="hero-image-frame">
+                    <img
+                        src="img/academia-danza-hero.png"
+                        alt="Ilustración artística representativa de Academia de Danza MX"
+                        class="notice-hero-image"
+                    >
+                </div>
+            </figure>
+        </section>
+
+        <!-- 
+            RESUMEN DE COMUNICADOS
+            Esta sección da sentido al enlace principal "Comunicados".
+        -->
+        <section class="summary-section" id="comunicados-resumen">
+            <div class="summary-section-header">
+                <p class="summary-label">Portal institucional</p>
+                <h2>Resumen de comunicados</h2>
+                <p>
+                    Consulta los avisos relevantes del periodo relacionados con planeación académica,
+                    seguimiento docente y organización de espacios.
+                </p>
+            </div>
+
+            <div class="summary-grid">
+                <article class="summary-card">
+                    <h3>Planeación del periodo</h3>
+                    <p>
+                        Avisos sobre reuniones iniciales, entrega de planeaciones y seguimiento académico
+                        por asignatura.
+                    </p>
+                </article>
+
+                <article class="summary-card">
+                    <h3>Calendario y evaluaciones</h3>
+                    <p>
+                        Información clave sobre revisiones parciales, ensayos y fechas de evaluación final.
+                    </p>
+                </article>
+
+                <article class="summary-card">
+                    <h3>Uso de espacios</h3>
+                    <p>
+                        Lineamientos para el uso ordenado del auditorio, salones y áreas comunes de práctica.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 
+            RESUMEN DE COORDINACIÓN
+            Esta sección da sentido al enlace principal "Coordinación".
+        -->
+        <section class="summary-section" id="coordinacion-resumen">
+            <div class="summary-section-header">
+                <p class="summary-label">Coordinación académica</p>
+                <h2>Orientación general para docentes</h2>
+                <p>
+                    Esta sección resume el enfoque operativo del periodo y la importancia de mantener
+                    seguimiento puntual a actividades, horarios y comunicación institucional.
+                </p>
+            </div>
+
+            <div class="summary-grid">
+                <article class="summary-card">
+                    <h3>Seguimiento de grupos</h3>
+                    <p>
+                        Se solicita registrar avances y observar la planeación académica de cada asignatura.
+                    </p>
+                </article>
+
+                <article class="summary-card">
+                    <h3>Comunicación interna</h3>
+                    <p>
+                        Toda actualización de horarios, fechas o uso de espacios deberá consultarse por este portal.
+                    </p>
+                </article>
+
+                <article class="summary-card">
+                    <h3>Operación académica</h3>
+                    <p>
+                        La coordinación organizará espacios y tiempos para favorecer el trabajo ordenado entre grupos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 
+            TARJETA DE METADATOS
+            Resume la información administrativa principal del comunicado.
+        -->
+        <section class="notice-meta-card">
+            <div class="notice-meta-item">
+                <span class="meta-label">Fecha de publicación</span>
+                <span class="meta-value">10 de marzo de 2026</span>
+            </div>
+
+            <div class="notice-meta-item">
+                <span class="meta-label">Área responsable</span>
+                <span class="meta-value">Coordinación académica</span>
+            </div>
+
+            <div class="notice-meta-item">
+                <span class="meta-label">Periodo académico</span>
+                <span class="meta-value">Marzo - julio 2026</span>
+            </div>
+        </section>
+
+        <!-- 
+            SECCIÓN 1: INFORMACIÓN GENERAL
+        -->
+        <section class="notice-content" id="informacion-general">
+            <h2>Información general</h2>
+
+            <p>
+                Con el fin de mantener una planeación académica ordenada y una operación clara
+                entre coordinación y docentes, se comparte el presente comunicado interno con
+                información relacionada con actividades del periodo, horarios clave, fechas de evaluación
+                y lineamientos para el uso de espacios de trabajo y ensayo.
+            </p>
+
+            <p>
+                Este comunicado tiene como objetivo facilitar la organización de clases, revisiones,
+                ensayos y actividades institucionales, así como apoyar la distribución adecuada
+                de grupos en espacios comunes como salones y auditorio.
+            </p>
+
+            <p>
+                Se solicita al personal docente revisar cuidadosamente la información y dar seguimiento
+                puntual a las fechas y lineamientos aquí presentados para favorecer el desarrollo
+                académico del periodo.
+            </p>
+        </section>
+
+        <!-- 
+            SECCIÓN 2: ASIGNATURAS CONSIDERADAS
+        -->
+        <section class="notice-highlights" id="asignaturas">
+            <h2>Asignaturas consideradas</h2>
+
+            <ul>
+                <li><strong>Danza clásica</strong></li>
+                <li><strong>Danza contemporánea</strong></li>
+                <li><strong>Popular Mexicano</strong></li>
+                <li><strong>Danza opción Multidisciplinar</strong></li>
+            </ul>
+        </section>
+
+        <!-- 
+            SECCIÓN 3: CALENDARIO DE ACTIVIDADES
+        -->
+        <section class="notice-content" id="calendario">
+            <h2>Calendario general de actividades</h2>
+
+            <p>
+                Durante el presente periodo académico se realizarán reuniones de seguimiento,
+                revisiones parciales, ensayos por asignatura y actividades de preparación
+                para evaluaciones internas.
+            </p>
+
+            <ul>
+                <li><strong>17 de marzo de 2026:</strong> reunión inicial de coordinación con personal docente.</li>
+                <li><strong>24 de marzo de 2026:</strong> entrega de planeación breve por asignatura.</li>
+                <li><strong>08 de abril de 2026:</strong> revisión de avance académico y seguimiento de grupos.</li>
+                <li><strong>22 de mayo de 2026:</strong> ensayo general por bloques de asignatura.</li>
+                <li><strong>10 de junio de 2026:</strong> reunión de cierre previo a evaluaciones finales.</li>
+            </ul>
+        </section>
+
+        <!-- 
+            SECCIÓN 4: HORARIOS Y FECHAS CLAVE
+        -->
+        <section class="notice-highlights" id="fechas-clave">
+            <h2>Horarios y fechas clave</h2>
+
+            <ul>
+                <li><strong>Entrega de planeaciones:</strong> antes de las 18:00 horas del 24 de marzo de 2026.</li>
+                <li><strong>Revisiones parciales:</strong> del 15 al 19 de abril de 2026.</li>
+                <li><strong>Evaluaciones finales:</strong> del 24 al 28 de junio de 2026.</li>
+                <li><strong>Horario sugerido para ensayos en auditorio:</strong> 16:00 a 19:00 horas, según asignación previa.</li>
+                <li><strong>Registro de uso de espacios:</strong> con al menos 48 horas de anticipación.</li>
+            </ul>
+        </section>
+
+        <!-- 
+            SECCIÓN 5: LINEAMIENTOS DE USO DE ESPACIOS
+        -->
+        <section class="notice-content" id="lineamientos">
+            <h2>Lineamientos de uso de espacios académicos</h2>
+
+            <p>
+                Para asegurar una operación ordenada entre grupos y asignaturas, el uso de salones,
+                áreas comunes y auditorio deberá realizarse conforme a la programación establecida
+                por coordinación académica.
+            </p>
+
+            <ul>
+                <li>Respetar el horario asignado a cada grupo y actividad.</li>
+                <li>Registrar previamente el uso del auditorio para ensayos, montajes o revisiones.</li>
+                <li>Evitar cambios de espacio sin notificación a coordinación.</li>
+                <li>Conservar en buenas condiciones el mobiliario y los recursos del área utilizada.</li>
+                <li>Finalizar actividades puntualmente para permitir la entrada del siguiente grupo.</li>
+            </ul>
+        </section>
+
+        <!-- 
+            SECCIÓN 6: CONTACTO Y SEGUIMIENTO
+        -->
+        <section class="notice-contact" id="contacto">
+            <h2>Contacto y seguimiento</h2>
+
+            <p>
+                Para dudas relacionadas con el presente comunicado, ajustes de horario
+                o solicitud de uso de espacios, comunícate con la coordinación académica.
+            </p>
+
+            <p>
+                <strong>Correo de atención:</strong>
+                <a href="mailto:coordinacion@academiadanzamx.edu">coordinacion@academiadanzamx.edu</a>
+            </p>
+
+            <p>
+                <strong>Horario de atención:</strong> lunes a viernes, de 09:00 a 17:00 horas.
+            </p>
+
+            <p>
+                También puedes consultar actualizaciones en el
+                <a href="#comunicados-resumen">resumen de comunicados institucionales</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- 
+        PIE DE PÁGINA
+        Cierra el documento con identidad institucional.
+    -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <p>&copy; 2026 Academia de Danza MX. Comunicado interno de uso simulado para fines de portafolio.</p>
+        </div>
+    </footer>
+
+    <!-- 
+        BOTÓN FLOTANTE VOLVER ARRIBA
+        Permanece fijo en pantalla y permite regresar
+        rápidamente al inicio del documento.
+    -->
+    <a href="#top" class="back-to-top-button" aria-label="Volver al inicio">
+        ↑
+    </a>
+
+</body>
+</html>
